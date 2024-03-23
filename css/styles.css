@@ -6,6 +6,7 @@
 
 body {
   font-family: "Arial", sans-serif;
+  background-color: #ebebeb; /* Añadido para establecer un color de fondo */
 }
 
 .cabecera {
@@ -52,11 +53,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column; /* Añadido para orientar los elementos en columna */
 }
 
 .content {
   text-align: center;
   color: white;
+  margin-top: 20px; /* Añadido para separar el contenido del título */
 }
 
 .section-principal h1 {
@@ -79,6 +82,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin-top: 20px; /* Añadido para separar el botón del texto */
 }
 
 .btn-contacto:hover {
@@ -89,4 +93,204 @@ body {
   background-color: #ebebeb;
   padding: 10px;
   text-align: center;
+}
+
+/* servicios */
+.btn-volver {
+  display: inline-block;
+  padding: 8px 16px; /* Ajusta el padding según sea necesario para el tamaño deseado */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado del texto */
+  border: none; /* Quita el borde del botón */
+  border-radius: 4px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+.btn-volver:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.columna {
+  flex: 1;
+  text-align: center;
+}
+
+.columna img {
+  max-width: 100%;
+  height: auto;
+}
+
+.columna:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna:nth-child(3) h2 {
+  margin-top: 20px; /* Añadido para separar el título del párrafo */
+}
+
+/* Ajuste de estilo para separar el título "EL REGALO PERFECTO" del título anterior */
+.columna:nth-child(3) h2 {
+  margin-top: 40px; /* Ajusta el valor según sea necesario */
+}
+
+/*Colecciones*/
+
+.container {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.container h1 {
+  text-transform: capitalize;
+}
+
+.servicios {
+  display: row;
+  justify-content: space-between;
+}
+
+.servicio {
+  display: row;
+  width: calc(33.33% - 10px);
+  text-align: left;
+}
+
+.servicio img {
+  max-width: 100%;
+}
+
+.manu {
+  display: flex;
+  align-items: right;
+}
+
+.container img {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto; /* Añade margen alrededor de la imagen */
+}
+
+.raya {
+  display: flex;
+  justify-content: center;
+}
+
+/*Sobre mi*/
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.titi {
+  width: 100%;
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.circ img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: end;
+}
+
+.joy {
+  margin: 1px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.parr {
+  text-align: right;
+}
+
+p {
+  width: 45%; /* Ancho del contenedor */
+  margin-top: 0; /* Elimina el margen superior predeterminado */
+}
+
+.curvabienvenida {
+  width: 100%; /* Ancho del contenedor */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/*Contactos*/
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img[src$="sol.png"] {
+  position: absolute;
+  left: 500px;
+  transform: translateY(-50%);
+}
+
+img[src$="ESTRELLA.png"] {
+  position: absolute;
+  top: 10%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+img[src$="ROMBO.png"] {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+img[src$="curv contact.png"] {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+footer {
+  text-align: center; /* Centra los elementos del footer */
+  background-color: #f2f2f2; /* Cambia el color de fondo del footer si es necesario */
+  padding: 20px 0; /* Añade espacio alrededor de los iconos */
+}
+
+/* Estilos para los iconos en el footer */
+footer img {
+  width: 30px; /* Ajusta el ancho de los iconos */
+  height: auto; /* Mantiene la proporción del icono */
+  margin: 0 10px; /* Añade un pequeño margen entre los iconos */
 }
